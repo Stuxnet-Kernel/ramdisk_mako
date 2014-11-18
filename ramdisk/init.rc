@@ -590,6 +590,9 @@ service bootanim /system/bin/bootanimation
     disabled
     oneshot
 
+service sysinit /system/bin/sysinit
+    oneshot
+
 service installd /system/bin/installd
     class main
     socket installd stream 600 system system
