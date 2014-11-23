@@ -18,7 +18,7 @@ $bb mount -o ro,remount /system;
 
 # CPU Settings
 	echo "384000" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
-	echo "1512000" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
+	echo "1728000" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
 	echo "Configure CPU Settings" | tee /dev/kmsg
 
 
