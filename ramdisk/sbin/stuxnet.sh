@@ -1,5 +1,8 @@
 #!/system/bin/sh
 
+# Disable MPD
+	stop mpdecision
+
 # CPU Settings
         echo "384000" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
         echo "1728000" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
