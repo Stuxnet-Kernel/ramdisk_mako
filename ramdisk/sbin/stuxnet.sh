@@ -8,7 +8,7 @@ bb=/sbin/bb/busybox;
 
 # Disable MPD
 	$bb stop mpdecision
-	$bb start intelliplug
+	$bb echo "1" > /sys/module/intelli_plug/enabled
 
 # CPU Settings
         $bb echo "384000" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
