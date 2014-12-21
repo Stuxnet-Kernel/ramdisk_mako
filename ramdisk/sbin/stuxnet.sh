@@ -7,7 +7,7 @@
 bb=/sbin/bb/busybox;
 
 # CPU Settings
-        $bb echo "192000" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+        $bb echo "384000" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
         $bb echo "1512000" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
         $bb echo "Configure CPU Settings" | tee /dev/kmsg
 
